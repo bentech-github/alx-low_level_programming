@@ -2,10 +2,10 @@
 /**
  * main - entry point
  *
- * Description: write C that print
+ * Description: write c that print
  *
- * Return: return always 0
-*/
+ * Return: return 0
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
