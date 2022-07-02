@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: write C program that prints
+ * Description: write C that print
  *
  * Return: return always 0
 */
