@@ -2,8 +2,6 @@
 /**
  * main - entry point
  *
- * Description: write c that print
- *
  * Return: return 0
  */
 int main(void)
