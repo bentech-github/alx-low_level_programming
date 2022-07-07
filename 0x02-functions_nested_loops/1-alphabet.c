@@ -4,7 +4,7 @@
  *
  * Return: return 0
  */
-void parent_alphabet(void)
+void print_alphabet(void)
 {
 	char i;
 
