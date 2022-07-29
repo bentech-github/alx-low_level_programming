@@ -16,8 +16,6 @@ int length_s1(char *str)
 	{
 		len++;
 	}
-	/**printf("%d\n", len);*/
-
 	return (len);
 }
 /**
@@ -35,8 +33,6 @@ int length_s2(char *str)
 	{
 		len++;
 	}
-	/**printf("%d\n", len);*/
-
 	return (len);
 }
 /**
