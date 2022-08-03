@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-/*
- * main - This is the main of the function
- * Return: 0
+/**
+ * main - prints the name of the file program was compiled from
+ * Return: Always 0
  */
 int main(void)
 {
