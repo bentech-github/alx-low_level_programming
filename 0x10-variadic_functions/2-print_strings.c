@@ -2,41 +2,38 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_strings - Entry Point
- * @separator: comma space
- * @n: number of elements
- * Return: void
+ * print_strings - print a string followed by a newline
+ * @separator: comma seperator
+ * @n: number of strings to be printed
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list valist;
+	va_list list;
 
-	unsigned int i;
+	unsigned int i = 0;
 
 	char *str;
 
-	if (separator == NULL)
+	va_start(list, n);
 
-		return;
-
-	va_start(valist, n);
-
-	for (i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
-		str = va_arg(valist, char *);
+		if (i != 0 && separator != NULL)
+
+			printf("%s", separator);
+
+		str = va_arg(list, char *);
 
 		if (str == NULL)
-		{
-			str = "(nil)";
-		}
-		printf("%s", str);
+			printf("(nil)");
+		else
+			printf("%s", str);
 
-		if (i != (n - 1))
-		{
-			printf("%s", separator);
-		}
+		/**
+		 * printf("%s", va_arg(list, char *));
+		 */
 	}
-	printf("\n");
+	va_end(list);
 
-	va_end(valist);
+	printf("\n");
 }
